@@ -15,7 +15,7 @@ export default function DashboardLayout({
                 <Flex gap={5}>
                     {/* sidebar section */}
                     <Sidebar />
-                    <Container maxWidth={"3/4"}>
+                    <Container paddingX={0} maxWidth={"3/4"}>
                         <Flex direction={"column"} gap={5}>
                             <Box padding={5} borderRadius={"2xl"} background={"gray.800"}>
                                 <BreadCrumb />

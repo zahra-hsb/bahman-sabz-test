@@ -1,6 +1,6 @@
 "use client"
 import { useDashboardSidebar } from "@/lib/providers/DashboardProviders";
-import { Container, Flex, Stack, Text } from "@chakra-ui/react";
+import { Flex, Stack, Text } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { MdDashboard } from "react-icons/md";

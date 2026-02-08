@@ -9,3 +9,11 @@ export interface DashboardMenuItemType {
     path: string;
     icon: ReactNode;
 }
+
+
+export interface GameType {
+    id: number;
+    name: string;
+    background_image: string;
+    slug: string;
+}
