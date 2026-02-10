@@ -10,10 +10,16 @@ export interface DashboardMenuItemType {
     icon: ReactNode;
 }
 
+export type GenreType = {
+    id: string;
+    name: string;
+}
 
 export interface GameType {
     id: number;
     name: string;
     background_image: string;
+    rating: number;
     slug: string;
+    genres: GenreType[]
 }

@@ -1,8 +1,15 @@
 "use server";
 
 
-export default async function getGamesServerAction() {
-    const res = await fetch("https://api.rawg.io/api/games?key=e47aec3858284518ae37af75d75f8ee4");
-  const data = await res.json();
-  return data;
+export default async function getGamesServerAction({
+    page,
+    pageSize
+}: {
+    page: number,
+    pageSize: number
+}) {
+    const res = await fetch(process.env.NEXT_PUBLIC_GAME_API + "games?key=" + process.env.GAME_API_KEY + "&page=" + page + "&page_size=" + pageSize);
+
+    const data = await res.json();
+    return data;
 }
